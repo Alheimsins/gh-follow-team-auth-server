@@ -1,0 +1,37 @@
+{
+  "name": "gh-follow-team-auth-server",
+  "version": "1.0.0",
+  "description": "Auth server for gh-follow-team",
+  "private": true,
+  "scripts": {
+    "test": "standard && ava",
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alheimsins/gh-follow-team-auth-server.git"
+  },
+  "keywords": [
+    "oauth",
+    "github",
+    "follow team members",
+    "server"
+  ],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alheimsins/gh-follow-team-auth-server/issues"
+  },
+  "homepage": "https://github.com/Alheimsins/gh-follow-team-auth-server#readme",
+  "dependencies": {
+    "axios": "0.19.2"
+  },
+  "devDependencies": {
+    "ava": "3.8.2",
+    "standard": "14.3.3"
+  },
+  "engines": {
+    "node": ">=12.16.3"
+  }
+}
