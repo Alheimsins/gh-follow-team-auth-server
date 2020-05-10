@@ -11,13 +11,12 @@ module.exports = async (request, response) => {
   const options = { headers: { accept: 'application/json' } }
   try {
     const { data } = await axios.post(accessTokenUrl, payload, options)
-    const { access_token: accessToken, state } = data
+    const { access_token: accessToken } = data
     response.writeHead(301,
-      { Location: `http://localhost:9000/callback?token=${accessToken}&state=${state}` }
+      { Location: `http://localhost:9000/callback?token=${accessToken}` }
     )
     response.end()
   } catch (error) {
-    console.error('noke gale')
     console.error(error)
   }
 }
