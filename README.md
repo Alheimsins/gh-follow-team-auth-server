@@ -11,7 +11,23 @@ Developed for running serverless at [Vercel](https://vercel.com)
 
 Create an OAuth app on GitHub.
 
+Set Authorization callback URL to `<url-for-this-app>/callback`
+
 Add clientID and clientSecret as `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET` to your Vercel project
+
+## API
+
+### /login
+
+Redirects to GitHub for authorize
+
+### /callback
+
+The callback for OAuth  authorization
+
+## Releated
+
+- [gh-follow-team](https://github.com/Alheimsins/gh-follow-team) cli for following team members
 
 # License
 
