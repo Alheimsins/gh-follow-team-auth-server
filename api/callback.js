@@ -5,14 +5,15 @@ module.exports = async (request, response) => {
   const payload = {
     client_id: process.env.GITHUB_CLIENT_ID,
     client_secret: process.env.GITHUB_CLIENT_SECRET,
-    code: request.query.code
+    code: request.query.code,
+    state: request.query.state
   }
   const options = { headers: { accept: 'application/json' } }
   try {
     const { data } = await axios.post(accessTokenUrl, payload, options)
-    const { access_token: accessToken } = data
+    const { access_token: accessToken, state } = data
     response.writeHead(301,
-      { Location: `http://localhost:9000/callback?token=${accessToken}` }
+      { Location: `http://localhost:9000/callback?token=${accessToken}&state=${state}` }
     )
     response.end()
   } catch (error) {
