@@ -25,6 +25,16 @@ Redirects to GitHub for authorize
 
 The callback for OAuth  authorization
 
+## Development
+
+Add secrets to a local `.env``
+
+Start the server with the [vercel-cli](https://vercel.com/download)
+
+```
+$ vc dev
+```
+
 ## Releated
 
 - [gh-follow-team](https://github.com/Alheimsins/gh-follow-team) cli for following team members
