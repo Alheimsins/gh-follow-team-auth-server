@@ -1,6 +1,6 @@
 {
   "name": "gh-follow-team-auth-server",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Auth server for gh-follow-team",
   "private": true,
   "scripts": {
