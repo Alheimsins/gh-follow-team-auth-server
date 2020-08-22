@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/Alheimsins/gh-follow-team-auth-server#readme",
   "dependencies": {
-    "axios": "0.19.2"
+    "axios": "0.20.0"
   },
   "devDependencies": {
     "ava": "3.11.1",
